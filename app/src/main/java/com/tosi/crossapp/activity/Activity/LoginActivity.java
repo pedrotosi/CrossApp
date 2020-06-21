@@ -29,7 +29,7 @@ public class LoginActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_login2);
+        setContentView(R.layout.activity_login);
 
         verificarUsuarioLogado();
 
@@ -75,7 +75,7 @@ public class LoginActivity extends AppCompatActivity {
     }
 
     private void abrirTelaPrincipal(){
-         Intent intent = new Intent(LoginActivity.this, MainActivity.class);
+         Intent intent = new Intent(LoginActivity.this, CheckinActivity.class);
          startActivity(intent);
          finish();
     }
