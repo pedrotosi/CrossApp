@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "133763611350",
+    "firebase_url": "https://crossapp-1433a.firebaseio.com",
+    "project_id": "crossapp-1433a",
+    "storage_bucket": "crossapp-1433a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:133763611350:android:0c4d15356b3e5b871aa777",
+        "android_client_info": {
+          "package_name": "com.tosi.crossapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "133763611350-usn1fhmg9lv9u14dkj02fio65qsgt9m9.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.tosi.crossapp",
+            "certificate_hash": "47be0b23ed53ee95b23e73e7d9901cc6f3249a46"
+          }
+        },
+        {
+          "client_id": "133763611350-lfbvj87ej1psmeu95mf8sobjv28im9el.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAMKV6ZTNVl3pmLywKorVyTd0FiwrgL42k"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "133763611350-lfbvj87ej1psmeu95mf8sobjv28im9el.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

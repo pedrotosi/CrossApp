@@ -1,0 +1,31 @@
+<resources>
+    <string name="app_name">CrossApp</string>
+    <string name="title_activity_login">Sign in</string>
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="welcome">"Welcome !"</string>
+    <string name="invalid_username">Not a valid username</string>
+    <string name="invalid_password">Password must be >5 characters</string>
+    <string name="login_failed">"Login failed"</string>
+    <string name="gambatte">GAMBATTE!</string>
+    <string name="Logo_Evolution">Logo_Evolution</string>
+    <string name="senha">senha</string>
+    <string name="Cadastrese">Cadastre-se!</string>
+    <string name="email">email</string>
+    <string name="CADASTRAR">CADASTRAR</string>
+    <string name="nome">nome</string>
+    <string name="sair">Sair</string>
+    <string name="sobre">Sobre</string>
+    <string name="checkin">Check-in</string>
+    <string name="EscolhaCheckin">Escolha a data para o Checkin:</string>
+    <string name="fundo_logo">fundo_logo</string>
+    <string name="logo_box">Logo Box</string>
+    <string name="horario_6">6:00</string>
+    <string name="horario_7">7:00</string>
+    <string name="horario_18">18:30</string>
+    <string name="horario_19">19:30</string>
+    <string name="horario_20">20:30</string>
+    <string name="cancelar">X</string>
+</resources>

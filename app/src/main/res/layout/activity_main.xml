@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/preto"
+    tools:context=".activity.Activity.MainActivity"
+    tools:layout_editor_absoluteY="25dp">
+
+    <Button
+        android:id="@+id/botao_cancelar"
+        android:layout_width="50dp"
+        android:layout_height="48dp"
+        android:background="@color/design_default_color_error"
+        android:fontFamily="sans-serif-black"
+        android:text="@string/cancelar"
+        android:textSize="25sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/botao_checkin"
+        app:layout_constraintTop_toBottomOf="@+id/bar_horario" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="65dp"
+        android:layout_marginLeft="65dp"
+        android:text="@string/horario_6"
+        android:textColor="@color/amareloClaro"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toStartOf="@+id/textView3"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/textView4" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/horario_7"
+        android:textColor="@color/amareloClaro"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toStartOf="@+id/textView4"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/textView2"
+        app:layout_constraintTop_toTopOf="@+id/textView4" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="15dp"
+        android:text="@string/horario_18"
+        android:textColor="@color/amareloClaro"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/bar_horario"
+        app:layout_constraintEnd_toStartOf="@+id/textView5"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/textView3" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/horario_19"
+        android:textColor="@color/amareloClaro"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toStartOf="@+id/textView6"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/textView4"
+        app:layout_constraintTop_toTopOf="@+id/textView4" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/horario_20"
+        android:textColor="@color/amareloClaro"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/textView5"
+        app:layout_constraintTop_toTopOf="@+id/textView4" />
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar" />
+
+    <CalendarView
+        android:id="@+id/calendario_app"
+        style="@android:style/Widget.DeviceDefault.CalendarView"
+        android:layout_width="327dp"
+        android:layout_height="307dp"
+        android:layout_marginTop="24dp"
+        android:background="@color/amareloEscuro"
+        android:dateTextAppearance="@style/TextAppearance.AppCompat.Large"
+        android:drawingCacheQuality="high"
+        android:minDate="01/01/2020"
+        android:showWeekNumber="false"
+        android:shownWeekCount="6"
+        android:splitMotionEvents="false"
+        android:weekDayTextAppearance="@style/TextAppearance.AppCompat.Medium"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.524"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <Button
+        android:id="@+id/botao_checkin"
+        android:layout_width="250dp"
+        android:layout_height="48dp"
+        android:background="@color/amareloClaro"
+        android:fontFamily="sans-serif-black"
+        android:text="@string/checkin"
+        android:textSize="25sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/botao_cancelar"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bar_horario" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="334dp"
+        android:layout_height="36dp"
+        android:layout_marginTop="32dp"
+        android:fontFamily="sans-serif-black"
+        android:text="@string/EscolhaCheckin"
+        android:textColor="@color/amareloClaro"
+        android:textSize="22sp"
+        app:layout_constraintEnd_toEndOf="@+id/calendario_app"
+        app:layout_constraintStart_toStartOf="@+id/calendario_app"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar" />
+
+    <SeekBar
+        android:id="@+id/bar_horario"
+        style="@style/Widget.AppCompat.SeekBar.Discrete"
+        android:layout_width="332dp"
+        android:layout_height="26dp"
+        android:layout_marginBottom="40dp"
+        android:max="5"
+        android:progress="0"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.405"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/calendario_app" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
